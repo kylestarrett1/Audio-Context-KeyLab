@@ -1,0 +1,73 @@
+html {
+  background-color: lavenderblush;
+}
+
+#main-container {
+  position: absolute;
+  width: 650px;
+  height: 285px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+.key {
+  order: 2;
+}
+
+[data-key="C"] {
+  background-color: white;
+}
+
+[data-key="C#/Db"] {
+  background-color: black;
+}
+
+[data-key="D"] {
+  background-color: white;
+}
+
+[data-key="D#/Eb"] {
+  background-color: black;
+}
+
+[data-key="E"] {
+  background-color: white;
+}
+
+[data-key="F"] {
+  background-color: white;
+}
+
+[data-key="F#/Gb"] {
+  background-color: black;
+}
+
+[data-key="G"] {
+  background-color: white;
+}
+
+[data-key="G#/Ab"] {
+  background-color: black;
+}
+
+[data-key="A"] {
+  background-color: white;
+}
+
+[data-key="A#/Bb"] {
+  background-color: black;
+}
+
+[data-key="B"] {
+  background-color: white;
+}
