@@ -16,62 +16,62 @@ var audioContext = new AudioContext();
 // C4
 var osc1 = audioContext.createOscillator();
 osc1.frequency.value = 261.63;
-osc1.connect(audioContext.destination);
+osc1.start();
 
 // C#/Db
 var osc2 = audioContext.createOscillator();
 osc2.frequency.value = 277.18;
-osc2.connect(audioContext.destination);
+osc2.start();
 
 // D
 var osc3 = audioContext.createOscillator();
 osc3.frequency.value = 293.66;
-osc3.connect(audioContext.destination);
+osc3.start();
 
 // D#/Eb
 var osc4 = audioContext.createOscillator();
 osc4.frequency.value = 311.13;
-osc4.connect(audioContext.destination);
+osc4.start();
 
 // E
 var osc5 = audioContext.createOscillator();
 osc5.frequency.value = 329.63;
-osc5.connect(audioContext.destination);
+osc5.start();
 
 // F
 var osc6 = audioContext.createOscillator();
 osc6.frequency.value = 349.23;
-osc6.connect(audioContext.destination);
+osc6.start();
 
 // F#/Gb
 var osc7 = audioContext.createOscillator();
 osc7.frequency.value = 369.99;
-osc7.connect(audioContext.destination);
+osc7.start();
 
 // G4
 var osc8 = audioContext.createOscillator();
 osc8.frequency.value = 392.0;
-osc8.connect(audioContext.destination);
+osc8.start();
 
 // G#/Ab
 var osc9 = audioContext.createOscillator();
 osc9.frequency.value = 415.3;
-osc9.connect(audioContext.destination);
+osc9.start();
 
 // A
 var osc10 = audioContext.createOscillator();
 osc10.frequency.value = 440.0;
-osc10.connect(audioContext.destination);
+osc10.start();
 
 // A#/Bb
 var osc11 = audioContext.createOscillator();
 osc11.frequency.value = 466.16;
-osc11.connect(audioContext.destination);
+osc11.start();
 
 // B
 var osc12 = audioContext.createOscillator();
 osc12.frequency.value = 493.88;
-osc12.connect(audioContext.destination);
+osc12.start();
 
 // Variables
 
@@ -91,85 +91,85 @@ var C4 = document.querySelector("[data-key='C']"),
 /* Click Events */
 
 C4.addEventListener("click", function () {
-  osc1.start();
-  setTimeout(function () {
-    osc1.stop();
-  }, 1000);
+  osc1.connect(audioContext.destination);
+});
+C4.addEventListener("dblclick", function () {
+  osc1.disconnect(audioContext.destination);
 });
 
 cSharp4.addEventListener("click", function () {
-  osc2.start();
-  setTimeout(function () {
-    osc2.stop();
-  }, 1000);
+  osc2.connect(audioContext.destination);
+});
+cSharp4.addEventListener("dblclick", function () {
+  osc2.disconnect(audioContext.destination);
 });
 
 D4.addEventListener("click", function () {
-  osc3.start();
-  setTimeout(function () {
-    osc3.stop();
-  }, 1000);
+  osc3.connect(audioContext.destination);
+});
+D4.addEventListener("dblclick", function () {
+  osc3.disconnect(audioContext.destination);
 });
 
 dSharp4.addEventListener("click", function () {
-  osc4.start();
-  setTimeout(function () {
-    osc4.stop();
-  }, 1000);
+  osc4.connect(audioContext.destination);
+});
+dSharp4.addEventListener("dblclick", function () {
+  osc4.disconnect(audioContext.destination);
 });
 
 E4.addEventListener("click", function () {
-  osc5.start();
-  setTimeout(function () {
-    osc5.stop();
-  }, 1000);
+  osc5.connect(audioContext.destination);
+});
+E4.addEventListener("dblclick", function () {
+  osc5.disconnect(audioContext.destination);
 });
 
 F4.addEventListener("click", function () {
-  osc6.start();
-  setTimeout(function () {
-    osc6.stop();
-  }, 1000);
+  osc6.connect(audioContext.destination);
+});
+F4.addEventListener("dblclick", function () {
+  osc6.disconnect(audioContext.destination);
 });
 
 fSharp4.addEventListener("click", function () {
-  osc7.start();
-  setTimeout(function () {
-    osc7.stop();
-  }, 1000);
+  osc7.connect(audioContext.destination);
+});
+fSharp4.addEventListener("dblclick", function () {
+  osc7.disconnect(audioContext.destination);
 });
 
 G4.addEventListener("click", function () {
-  osc8.start();
-  setTimeout(function () {
-    osc8.stop();
-  }, 1000);
+  osc8.connect(audioContext.destination);
+});
+G4.addEventListener("dblclick", function () {
+  osc8.disconnect(audioContext.destination);
 });
 
 gSharp4.addEventListener("click", function () {
-  osc9.start();
-  setTimeout(function () {
-    osc9.stop();
-  }, 1000);
+  osc9.connect(audioContext.destination);
+});
+gSharp4.addEventListener("dblclick", function () {
+  osc9.disconnect(audioContext.destination);
 });
 
 A4.addEventListener("click", function () {
-  osc10.start();
-  setTimeout(function () {
-    osc10.stop();
-  }, 1000);
+  osc10.connect(audioContext.destination);
+});
+A4.addEventListener("dblclick", function () {
+  osc10.disconnect(audioContext.destination);
 });
 
 aSharp4.addEventListener("click", function () {
-  osc11.start();
-  setTimeout(function () {
-    osc11.stop();
-  }, 1000);
+  osc11.connect(audioContext.destination);
+});
+aSharp4.addEventListener("dblclick", function () {
+  osc11.disconnect(audioContext.destination);
 });
 
 B4.addEventListener("click", function () {
-  osc12.start();
-  setTimeout(function () {
-    osc12.stop();
-  }, 1000);
+  osc12.connect(audioContext.destination);
+});
+B4.addEventListener("dblclick", function () {
+  osc12.disconnect(audioContext.destination);
 });
