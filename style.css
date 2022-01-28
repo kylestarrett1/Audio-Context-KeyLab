@@ -40,6 +40,8 @@ html {
   left: 39.5%;
   width: 2.25%;
   height: 58%;
+
+  color: white;
 }
 
 [data-key="D"] {
@@ -54,6 +56,8 @@ html {
   left: 43.2%;
   width: 2.25%;
   height: 58%;
+
+  color: white;
 }
 
 [data-key="E"] {
@@ -74,6 +78,8 @@ html {
   left: 50.7%;
   width: 2.25%;
   height: 58%;
+
+  color: white;
 }
 
 [data-key="G"] {
@@ -88,6 +94,8 @@ html {
   left: 54.4%;
   width: 2.25%;
   height: 58%;
+
+  color: white;
 }
 
 [data-key="A"] {
@@ -102,10 +110,17 @@ html {
   left: 58.25%;
   width: 2.25%;
   height: 58%;
+
+  color: white;
 }
 
 [data-key="B"] {
   background-color: white;
   width: 3.75%;
   height: 100%;
+}
+
+.key:active {
+  background-color: rgb(192, 192, 192);
+  border: 1px inset black;
 }

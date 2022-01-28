@@ -308,5 +308,223 @@ B4.addEventListener("mouseup", function () {
   osc12_saw.disconnect(audioContext.destination);
 });
 
+// Key Down/Up Events
+
+//C4
+let zDown = addEventListener("keydown", checkKeyPressDown_z, false);
+let zUp = addEventListener("keyup", checkKeyPressUp_z, false);
+
+function checkKeyPressDown_z(key) {
+  if (key.keyCode == "90") {
+    osc1.connect(audioContext.destination);
+    osc1_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_z(key) {
+  if (key.keyCode == "90") {
+    osc1.disconnect(audioContext.destination);
+    osc1_saw.disconnect(audioContext.destination);
+  }
+}
+
+// C#/Db4
+let sDown = addEventListener("keydown", checkKeyPressDown_s, false);
+let sUp = addEventListener("keyup", checkKeyPressUp_s, false);
+
+function checkKeyPressDown_s(key) {
+  if (key.keyCode == "83") {
+    osc2.connect(audioContext.destination);
+    osc2_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_s(key) {
+  if (key.keyCode == "83") {
+    osc2.disconnect(audioContext.destination);
+    osc2_saw.disconnect(audioContext.destination);
+  }
+}
+
+// D4
+let xDown = addEventListener("keydown", checkKeyPressDown_x, false);
+let xUp = addEventListener("keyup", checkKeyPressUp_x, false);
+
+function checkKeyPressDown_x(key) {
+  if (key.keyCode == "88") {
+    osc3.connect(audioContext.destination);
+    osc3_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_x(key) {
+  if (key.keyCode == "88") {
+    osc3.disconnect(audioContext.destination);
+    osc3_saw.disconnect(audioContext.destination);
+  }
+}
+
+// D#/Eb4
+let dDown = addEventListener("keydown", checkKeyPressDown_d, false);
+let dUp = addEventListener("keyup", checkKeyPressUp_d, false);
+
+function checkKeyPressDown_d(key) {
+  if (key.keyCode == "68") {
+    osc4.connect(audioContext.destination);
+    osc4_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_d(key) {
+  if (key.keyCode == "68") {
+    osc4.disconnect(audioContext.destination);
+    osc4_saw.disconnect(audioContext.destination);
+  }
+}
+
+// E4
+let cDown = addEventListener("keydown", checkKeyPressDown_c, false);
+let cUp = addEventListener("keyup", checkKeyPressUp_c, false);
+
+function checkKeyPressDown_c(key) {
+  if (key.keyCode == "67") {
+    osc5.connect(audioContext.destination);
+    osc5_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_c(key) {
+  if (key.keyCode == "67") {
+    osc5.disconnect(audioContext.destination);
+    osc5_saw.disconnect(audioContext.destination);
+  }
+}
+
+// F4
+let vDown = addEventListener("keydown", checkKeyPressDown_v, false);
+let vUp = addEventListener("keyup", checkKeyPressUp_v, false);
+
+function checkKeyPressDown_v(key) {
+  if (key.keyCode == "86") {
+    osc6.connect(audioContext.destination);
+    osc6_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_v(key) {
+  if (key.keyCode == "86") {
+    osc6.disconnect(audioContext.destination);
+    osc6_saw.disconnect(audioContext.destination);
+  }
+}
+
+// F#/Gb4
+let gDown = addEventListener("keydown", checkKeyPressDown_g, false);
+let gUp = addEventListener("keyup", checkKeyPressUp_g, false);
+
+function checkKeyPressDown_g(key) {
+  if (key.keyCode == "71") {
+    osc7.connect(audioContext.destination);
+    osc7_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_g(key) {
+  if (key.keyCode == "71") {
+    osc7.disconnect(audioContext.destination);
+    osc7_saw.disconnect(audioContext.destination);
+  }
+}
+
+// G4
+let bDown = addEventListener("keydown", checkKeyPressDown_b, false);
+let bUp = addEventListener("keyup", checkKeyPressUp_b, false);
+
+function checkKeyPressDown_b(key) {
+  if (key.keyCode == "66") {
+    osc8.connect(audioContext.destination);
+    osc8_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_b(key) {
+  if (key.keyCode == "66") {
+    osc8.disconnect(audioContext.destination);
+    osc8_saw.disconnect(audioContext.destination);
+  }
+}
+
+// G#/Ab4
+let hDown = addEventListener("keydown", checkKeyPressDown_h, false);
+let hUp = addEventListener("keyup", checkKeyPressUp_h, false);
+
+function checkKeyPressDown_h(key) {
+  if (key.keyCode == "72") {
+    osc9.connect(audioContext.destination);
+    osc9_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_h(key) {
+  if (key.keyCode == "72") {
+    osc9.disconnect(audioContext.destination);
+    osc9_saw.disconnect(audioContext.destination);
+  }
+}
+
+// A4
+let nDown = addEventListener("keydown", checkKeyPressDown_n, false);
+let nUp = addEventListener("keyup", checkKeyPressUp_n, false);
+
+function checkKeyPressDown_n(key) {
+  if (key.keyCode == "78") {
+    osc10.connect(audioContext.destination);
+    osc10_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_n(key) {
+  if (key.keyCode == "78") {
+    osc10.disconnect(audioContext.destination);
+    osc10_saw.disconnect(audioContext.destination);
+  }
+}
+
+// A#Bb4
+let jDown = addEventListener("keydown", checkKeyPressDown_j, false);
+let jUp = addEventListener("keyup", checkKeyPressUp_j, false);
+
+function checkKeyPressDown_j(key) {
+  if (key.keyCode == "74") {
+    osc11.connect(audioContext.destination);
+    osc11_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_j(key) {
+  if (key.keyCode == "74") {
+    osc11.disconnect(audioContext.destination);
+    osc11_saw.disconnect(audioContext.destination);
+  }
+}
+
+// B4
+let mDown = addEventListener("keydown", checkKeyPressDown_m, false);
+let mUp = addEventListener("keyup", checkKeyPressUp_m, false);
+
+function checkKeyPressDown_m(key) {
+  if (key.keyCode == "77") {
+    osc12.connect(audioContext.destination);
+    osc12_saw.connect(audioContext.destination);
+  }
+}
+
+function checkKeyPressUp_m(key) {
+  if (key.keyCode == "77") {
+    osc12.disconnect(audioContext.destination);
+    osc12_saw.disconnect(audioContext.destination);
+  }
+}
+
 // Resume audio after disconnection
 audioContext.resume();
